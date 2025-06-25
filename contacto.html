@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos y CSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. House - Contacto</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Titulo / Navegación -->
+  <header>
+    <h1>Dr. House - Contactanos</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre.html">Sobre la Serie</a></li>
+        <li><a href="elenco.html">Elenco y Personajes</a></li>
+        <li><a href="temporadas.html">Temporadas y Episodios</a></li>
+        <li><a href="eventos.html">Eventos y Curiosidades</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Formulario de contacto -->
+  <main class="container">
+  <div class="main-form">
+    <h2>Contacto</h2>
+   <form action="#" method="post">
+
+      <!-- Datos personales -->
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+    
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required>
+    
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" name="edad" min="0" max="120" required>
+    
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+    
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required>
+    
+      <!-- Motivo de consulta -->
+      <label for="sintomas">¿Qué síntomas tienes?</label>
+      <select id="sintomas" name="sintomas[]" multiple size="4" required>
+        <option value="fiebre">Fiebre</option>
+        <option value="tos">Tos persistente</option>
+        <option value="dolor">Dolor de cabeza</option>
+        <option value="fatiga">Fatiga</option>
+        <option value="respiracion">Dificultad para respirar</option>
+        <option value="otros">Otros</option>
+      </select>
+    
+      <label for="duracion">¿Desde cuándo tienes los síntomas?</label>
+      <input type="date" id="duracion" name="duracion" required>
+    
+      <label for="intensidad">¿Qué tan intensos son los síntomas?</label>
+      <input type="range" id="intensidad" name="intensidad" min="1" max="10">
+      <small>1 (leve) - 10 (grave)</small>
+    
+      <label for="antecedentes">Antecedentes médicos importantes:</label>
+      <textarea id="antecedentes" name="antecedentes" rows="3"></textarea>
+    
+      <!-- Comentarios adicionales -->
+      <label for="mensaje">Comentarios adicionales:</label>
+      <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+    
+      <!-- Botón -->
+      <div>
+        <button type="submit">Enviar consulta</button>
+      </div>
+      <img src="/img/grupohouse.png" alt="Elenco de Dr House" class="contact-img">
+    </form>
+  </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="footer-lista">
+      <div>
+        <h4>Enlaces</h4>
+      <ul class="footer-ul">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre.html">Sobre la Serie</a></li>
+        <li><a href="elenco.html">Elenco y Personajes</a></li>
+        <li><a href="temporadas.html">Temporadas y Episodios</a></li>
+        <li><a href="eventos.html">Eventos y Curiosidades</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Síguenos</h4>
+        <a href="#"><img src="icons/twitter.svg" alt="Twitter"></a>
+        <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+      </div>
+      <div>
+        <h4>Suscríbete</h4>
+        <form><input type="email" placeholder="Tu email"><button>OK</button></form>
+      </div>
+      <div>
+        <p>&copy; 2025 Trabajo de la Facultad</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
