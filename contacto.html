@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rubik+Broken+Fax&family=Rubik+Bubbles&family=Rubik+Glitch&family=Rubik+Iso&family=Rubik+Maze&family=VT323&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="icono/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <!-- Titulo / Navegación -->
@@ -36,16 +37,7 @@
   <!-- Formulario de contacto -->
   <main class="container">
   <div class="main-form">
-    <br>
-  
    <form action="#" method="post">
-<!-- Checkbox oculto para mensaje de confirmación -->
-    <input type="checkbox" id="enviado" hidden>
-
-    <!-- FORMULARIO -->
-    <form onsubmit="event.preventDefault(); enviado.checked = true;">
-
-      <!-- DATOS PERSONALES -->
       <h2>Datos personales</h2>
       <div class="grupo-decampos">
         <div>
@@ -69,7 +61,6 @@
       <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required>
         </div>
       </div>
-      <!-- MOTIVO DE CONSULTA -->
       <h2>Motivo de consulta</h2>
       <label for="sintomas">¿Qué síntomas tienes?</label>
       <select id="sintomas" name="sintomas[]" multiple size="4" required>
@@ -80,31 +71,26 @@
         <option value="respiracion">Dificultad para respirar</option>
         <option value="otros">Otros</option>
       </select>
+      <br>
       <label for="duracion">¿Desde cuándo tienes los síntomas?</label>
       <input type="date" id="duracion" name="duracion" required>
+      <br>
       <label for="intensidad">¿Qué tan intensos son los síntomas?</label>
       <input type="range" id="intensidad" name="intensidad" min="1" max="10">
       <small>1 (leve) - 10 (grave)</small>
+      <br>
       <label for="antecedentes">Antecedentes médicos importantes:</label>
       <textarea id="antecedentes" name="antecedentes" rows="3"></textarea>
-
-      <!-- COMENTARIOS FINALES -->
+      <br>
       <h2>Comentarios finales</h2>
       <label for="mensaje">Puede ser mas especifico si quiere:</label>
       <textarea id="mensaje" name="mensaje" rows="4"></textarea>
-
-      <!-- BOTÓN -->
       <div>
-        <button type="submit">Enviar consulta</button>
+        <button  type="submit"><a href="enviado.html">Enviar consulta</a></button>
       </div>
     </form>
-
-    <!-- MENSAJE DE ÉXITO -->
-    <p class="mensaje-exito">¡Gracias! Tu consulta fue recibida. Te contactaremos pronto.</p>
   </div>
 </main>
-  </main>
-
   <!-- Pie de página -->
   <footer class="footer-simple">
   <p>© 2025 Trabajo de la Facultad – Sitio fan de Dr. House</p>

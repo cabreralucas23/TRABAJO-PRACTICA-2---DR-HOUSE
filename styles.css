@@ -300,18 +300,6 @@ button[type="submit"]:hover {
 }
 
 
-/* Mensaje de éxito */
-.mensaje-exito {
-  display: none;
-  color: green;
-  font-weight: bold;
-  margin-top: 1rem;
-  font-size: 1rem;
-}
-
-#enviado:checked ~ .mensaje-exito {
-  display: block;
-}
 
 /* DIVS */
 
