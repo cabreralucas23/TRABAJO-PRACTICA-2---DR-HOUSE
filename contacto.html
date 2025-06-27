@@ -4,48 +4,73 @@
   <!-- Metadatos y CSS -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fan site sobre la serie Dr. House. Información sobre episodios, personajes y curiosidades.">
+  <meta name="keywords" content="Doctor House, Dr House, serie de medicos, Hugh Laurie, House">
   <title>Dr. House - Contacto</title>
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rubik+Broken+Fax&family=Rubik+Bubbles&family=Rubik+Glitch&family=Rubik+Iso&family=Rubik+Maze&family=VT323&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Titulo / Navegación -->
   <header>
-    <h1>Dr. House - Contactanos</h1>
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="sobre.html">Sobre la Serie</a></li>
-        <li><a href="elenco.html">Elenco y Personajes</a></li>
-        <li><a href="temporadas.html">Temporadas y Episodios</a></li>
-        <li><a href="eventos.html">Eventos y Curiosidades</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <nav class="navbar responsive">
+     <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="sobre.html">Sobre la Serie</a></li>
+    <li><a href="elenco.html">Elenco y Personajes</a></li>
+    <li><a href="temporadas.html">Temporadas</a></li>
+    <li><a href="eventos.html">Eventos</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+     </ul>
+   </nav>
+    <h1 class="dm-serif-text-regular">Dr. House - Contactanos</h1>
   </header>
 
   <!-- Formulario de contacto -->
   <main class="container">
   <div class="main-form">
-    <h2>Contacto</h2>
+    <br>
+  
    <form action="#" method="post">
+<!-- Checkbox oculto para mensaje de confirmación -->
+    <input type="checkbox" id="enviado" hidden>
 
-      <!-- Datos personales -->
+    <!-- FORMULARIO -->
+    <form onsubmit="event.preventDefault(); enviado.checked = true;">
+
+      <!-- DATOS PERSONALES -->
+      <h2>Datos personales</h2>
+      <div class="grupo-decampos">
+        <div>
       <label for="nombre">Nombre:</label>
       <input type="text" id="nombre" name="nombre" required>
-    
+        </div>
+        <div>
       <label for="apellido">Apellido:</label>
       <input type="text" id="apellido" name="apellido" required>
-    
+        </div>
+        <div>
       <label for="edad">Edad:</label>
       <input type="number" id="edad" name="edad" min="0" max="120" required>
-    
+        </div>
+        <div>
       <label for="email">Correo electrónico:</label>
       <input type="email" id="email" name="email" required>
-    
+        </div>
+        <div>
       <label for="telefono">Teléfono:</label>
       <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required>
-    
-      <!-- Motivo de consulta -->
+        </div>
+      </div>
+      <!-- MOTIVO DE CONSULTA -->
+      <h2>Motivo de consulta</h2>
       <label for="sintomas">¿Qué síntomas tienes?</label>
       <select id="sintomas" name="sintomas[]" multiple size="4" required>
         <option value="fiebre">Fiebre</option>
@@ -55,59 +80,42 @@
         <option value="respiracion">Dificultad para respirar</option>
         <option value="otros">Otros</option>
       </select>
-    
       <label for="duracion">¿Desde cuándo tienes los síntomas?</label>
       <input type="date" id="duracion" name="duracion" required>
-    
       <label for="intensidad">¿Qué tan intensos son los síntomas?</label>
       <input type="range" id="intensidad" name="intensidad" min="1" max="10">
       <small>1 (leve) - 10 (grave)</small>
-    
       <label for="antecedentes">Antecedentes médicos importantes:</label>
       <textarea id="antecedentes" name="antecedentes" rows="3"></textarea>
-    
-      <!-- Comentarios adicionales -->
-      <label for="mensaje">Comentarios adicionales:</label>
+
+      <!-- COMENTARIOS FINALES -->
+      <h2>Comentarios finales</h2>
+      <label for="mensaje">Puede ser mas especifico si quiere:</label>
       <textarea id="mensaje" name="mensaje" rows="4"></textarea>
-    
-      <!-- Botón -->
+
+      <!-- BOTÓN -->
       <div>
         <button type="submit">Enviar consulta</button>
       </div>
-      <img src="/img/grupohouse.png" alt="Elenco de Dr House" class="contact-img">
     </form>
+
+    <!-- MENSAJE DE ÉXITO -->
+    <p class="mensaje-exito">¡Gracias! Tu consulta fue recibida. Te contactaremos pronto.</p>
   </div>
+</main>
   </main>
 
   <!-- Pie de página -->
-  <footer>
-    <div class="footer-lista">
-      <div>
-        <h4>Enlaces</h4>
-      <ul class="footer-ul">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="sobre.html">Sobre la Serie</a></li>
-        <li><a href="elenco.html">Elenco y Personajes</a></li>
-        <li><a href="temporadas.html">Temporadas y Episodios</a></li>
-        <li><a href="eventos.html">Eventos y Curiosidades</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-      </div>
-      <div class="footer-links">
-        <h4>Síguenos</h4>
-        <a href="#"><img src="icons/twitter.svg" alt="Twitter"></a>
-        <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
-        <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
-      </div>
-      <div>
-        <h4>Suscríbete</h4>
-        <form><input type="email" placeholder="Tu email"><button>OK</button></form>
-      </div>
-      <div>
-        <p>&copy; 2025 Trabajo de la Facultad</p>
-      </div>
-    </div>
-  </footer>
+  <footer class="footer-simple">
+  <p>© 2025 Trabajo de la Facultad – Sitio fan de Dr. House</p>
+  <p>Hecho por <a href="https://github.com/cabreralucas23/SkrillexLandingPage" class="rubik-broken-fax-regular">Lucas Damian Cabrera</a></p>
+  <div class="footer-icons">
+    <a href="https://www.primevideo.com/dp/amzn1.dv.gti.ed27f1ca-1325-4d0a-be0d-0bf3896769cf?autoplay=0&ref_=atv_cf_strg_wb"><img src="svg/amazon.svg" alt="Amazon Prime video"></a>
+    <a href="https://play.max.com/show/1679eba6-66a9-40e6-8504-bf2aaba329e7?utm_source=universal_search"><img src="svg/hbomax.svg" alt="Hbomax"></a>
+    <a href="https://play.mercadolibre.com.ar/ver/dr-house/9f64b3a903b947f19c36bac46c434ad9?origin=google_media_actions_feed&matt_tool=20909904"><img src="svg/mercadolibre.svg" alt="Mercado Libre"></a>
+    <a href="https://www.netflix.com/watch/70136117?source=35"><img src="svg/netflix.svg" alt="Netflix"></a>
+  </div>
+</footer>
 </body>
 </html>
 

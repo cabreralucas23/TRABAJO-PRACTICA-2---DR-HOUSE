@@ -7,11 +7,13 @@
   --font-sans: 'Segoe UI', Tahoma, sans-serif;
   --font-heading: 'Merriweather', serif;
 }
+
 body {
   font-family: var(--font-sans);
   color: var(--text);
   background: var(--bg);
 }
+
 h1, h2, h3, h4 {
   font-family: var(--font-heading);
   display:flex;
@@ -28,7 +30,6 @@ header {
   background: var(--primary-dark);
 }
 
-/* Tipografía */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -36,11 +37,32 @@ body {
   color: #333;
 }
 
+/* FONTS */
+
+.bree-serif-regular {
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inconsolata-uniquifier {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 /* Titulo / Navegación */
 header {
   background: var(--primary-dark);
   color: white;
-  padding: 1rem 0;
 }
 
 nav ul {
@@ -87,6 +109,47 @@ a {
   color: inherit;
 }
 
+/* Estilo menú hamburguesa */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1001;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.navbar.responsive ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+/* Pistas de audio Index.html */
+.audio-section {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.audio-section h3 {
+  font-family: var(--font-heading);
+  margin-bottom: 1rem;
+}
+
+audio {
+  width: 80%;
+  max-width: 400px;
+}
+
 /* Contenedor principal */
 .container {
   max-width: 960px;
@@ -101,54 +164,50 @@ a {
 
 /* Pie de página */
 footer {
+  border-top: 2px solid rgba(255,255,255,0.2);
+}
+
+.footer-lista h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid white;
+  padding-bottom: 0.3rem;
+}
+
+.footer-links a img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer-links a img:hover {
+  transform: scale(1.2);
+}
+
+footer form {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 10px;
+}
+
+.footer-simple {
+  background: var(--primary-dark);
+  color: white;
   text-align: center;
   padding: 1rem 0;
-  margin-top: 2rem;
-  background: var(--primary-dark);
-  color: white;
 }
 
-.footer-lista {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap: 2rem;
-  padding: 2rem;
-  background: var(--primary-dark);
-  color: white;
+.footer-icons img {
+  width: 25px;
+  margin: 0 8px;
+  transition: transform 0.3s ease;
 }
 
-.footer-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.footer-ul a{
-  color: inherit;
-  text-decoration: none;
-}
-
-.footer-links {
-display: grid;
-color: white;
-}
-
-.footer-link a{
-  text-decoration: none;
-  color: white;
-}
-
-footer button {
-  background: rgb(85, 85, 85);
-  color: white;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-footer button:hover {
-  background-color: var(--primary-dark);
+.footer-icons img:hover {
+  transform: scale(1.2);
 }
 
 
@@ -190,38 +249,78 @@ tbody tr:hover {
 }
 
 .ir-tempo:hover {
-  background-color: var();
+  background-color:#2c3e50
 }
 
 /* Contacto */
 
-.contact-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 6px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.grupo-decampos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
-form input, form textarea, form select {
-  width: 100%;
-  max-width: 500px;
-  padding: 10px;
-  margin: 10px 0 20px;
-  border: 1px solid #ccc;
+.grupo-decampos > div {
+  flex: 1 1 45%;
+}
+
+form input,
+form select,
+form textarea {
+  background: #fff;
+  border: 2px solid #ccc;
   border-radius: 6px;
-  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.7rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: var(--primary-dark);
+  outline: none;
+}
+
+button[type="submit"] {
+  background: var(--primary-dark);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #1a2533;
+}
+
+
+/* Mensaje de éxito */
+.mensaje-exito {
+  display: none;
+  color: green;
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+#enviado:checked ~ .mensaje-exito {
+  display: block;
 }
 
 /* DIVS */
 
 .main-inicio {
   display: flex;
-  padding: 2rem;
+  padding: 2rem 2rem 0.5rem 2rem;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  margin-bottom: 1rem;
 }
 
 
@@ -253,7 +352,7 @@ form input, form textarea, form select {
 /* Elenco */
 .card-grilla {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 1.5rem;
   padding: 1.5rem;
 }
@@ -264,15 +363,14 @@ form input, form textarea, form select {
 }
 
 .card {
-  background: rgb(199, 198, 198);
+   background: rgb(199, 198, 198);
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: center;
-  transition: 0.3;
-  max-width: 450px;
-  max-height: 450px;
-  overflow: hidden;
+  transition: all 0.4s ease;
+  overflow: visible;
+  height: auto;
 }
 
 .card:hover {
@@ -281,13 +379,29 @@ form input, form textarea, form select {
 
 .card img {
   width: 200px;
-  height: 150px;
+  height: 200px;
   object-fit: cover;
   border-radius: 10px;
 }
 
 .card-content { 
   padding: 1rem;
+}
+
+.card-content p {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+/* Mostrar <p> solo cuando se pasa el mouse por la tarjeta */
+.card:hover .card-content p {
+  display: block;
+}
+.card:hover .card-content p {
+  max-height: 300px; 
+  opacity: 1;
 }
 
 /* Eventos y Curiosidades*/
@@ -301,8 +415,8 @@ form input, form textarea, form select {
 .noticia {
         background-color: #fff;
         border-radius: 10px;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-        margin-bottom: 30px;
+        box-shadow: 0px -26px 46px -14px rgba(0, 0, 0, 0.568);
+        margin-bottom: 50px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
@@ -310,7 +424,8 @@ form input, form textarea, form select {
   
 .noticia img {
         width: 100%;
-        height: auto;
+        height: 200px;
+        object-fit: cover;
         display: block;
       }
   
@@ -326,7 +441,9 @@ form input, form textarea, form select {
 .contenido p {
         line-height: 1.6;
       }
-  
+
+
+
 @media (min-width: 700px) {
         .noticia {
           flex-direction: row;
@@ -343,3 +460,39 @@ form input, form textarea, form select {
         }
       }
 
+      
+/* Responsive: menú hamburguesa en pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar.responsive {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: var(--primary-dark);
+    height: 100vh;
+    width: 70%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  }
+
+  .navbar.responsive ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+  }
+
+  #menu-toggle:checked + .menu-icon + .navbar.responsive {
+    transform: translateX(0%);
+  }
+
+  nav a {
+    display: block;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

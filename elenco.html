@@ -4,132 +4,130 @@
   <!-- Metadatos y CSS -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fan site sobre la serie Dr. House. Información sobre episodios, personajes y curiosidades.">
+  <meta name="keywords" content="Doctor House, Dr House, serie de medicos, Hugh Laurie, House">
   <title>Dr. House - Elenco y Personajes</title>
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rubik+Broken+Fax&family=Rubik+Bubbles&family=Rubik+Glitch&family=Rubik+Iso&family=Rubik+Maze&family=VT323&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Titulo / Navegación -->
   <header>
-    <h1>Dr. House - Elenco</h1>
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="sobre.html">Sobre la Serie</a></li>
-        <li><a href="elenco.html">Elenco y Personajes</a></li>
-        <li><a href="temporadas.html">Temporadas y Episodios</a></li>
-        <li><a href="eventos.html">Eventos y Curiosidades</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <nav class="navbar responsive">
+     <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="sobre.html">Sobre la Serie</a></li>
+    <li><a href="elenco.html">Elenco y Personajes</a></li>
+    <li><a href="temporadas.html">Temporadas</a></li>
+    <li><a href="eventos.html">Eventos</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+     </ul>
+   </nav>
+    <h1 class="dm-serif-text-regular">Dr. House - Elenco</h1>
   </header>
   <!-- Lista de personajes -->
   <main class="container">
     <div class="card-grilla">
 
         <div class="card">
-          <img src="/img/Dr House Perfil.jpeg">
+          <img src="img/Dr House Perfil.jpeg">
           <div class="card-content">
             <h3>Hugh Laurie</h3>
-            <p>Es un actor, humorista, escritor, músico y cantante británico.</p>
-            <label for="toggle1" class="toggle-label">Ver más</label>
+            <h4>(Dr. Gregory House)</h4>
+            <p class="inconsolata-uniquifier">Actor británico que se convirtió en ícono mundial gracias a su papel del médico sarcástico y brillante. Ganó dos Globos de Oro por este personaje. Antes era más conocido por comedias en Reino Unido.</p>
           </div>
         </div>
 
         <div class="card">
-            <img src="/img/Wilson Perfil.jpeg">
+            <img src="img/Wilson Perfil.jpeg">
             <div class="card-content">
               <h3>Robert Sean Leonard</h3>
-              <p>Nació en Westwood (Nueva Jersey), aunque creció en Ridgewood.</p>
-              <label for="toggle1" class="toggle-label">Ver más</label>
+              <h4>(Dr. James Wilson)</h4>
+              <p class="inconsolata-uniquifier">Conocido también por La sociedad de los poetas muertos, interpreta al oncólogo y mejor amigo de House. Su papel representa la empatía y el equilibrio emocional frente al cinismo de House.</p>
             </div>
           </div>
 
         <div class="card">
-          <div class="card-img">
-            <img src="/img/Foreman Perfil.jpeg">
-          </div>
+            <img src="img/Foreman Perfil.jpeg">
             <div class="card-content">
               <h3>Omar Epps</h3>
-              <p>Es un actor, músico y cantante de hip hop estadounidense.</p>
-              <label for="toggle1" class="toggle-label">Ver más</label>
+              <h4>(Dr. Eric Foreman)</h4>
+              <p class="inconsolata-uniquifier">Actor afroamericano con experiencia previa en dramas médicos (ER). Su personaje, ambicioso y racional, a menudo choca con la forma de trabajar de House, pero termina ganándose su respeto.</p>
             </div>
           </div>
 
         <div class="card">
-            <img src="/img/Chase Perfil.jpg">
+            <img src="img/Chase Perfil.jpg">
             <div class="card-content">
               <h3>Jesse Spencer</h3>
-              <p> Es un actor y músico australiano.</p>
-              <label for="toggle1" class="toggle-label">Ver más</label>
+              <h4>(Dr. Robert Chase)</h4>
+              <p class="inconsolata-uniquifier">Actor australiano que interpretó al cirujano con pasado privilegiado. Es uno de los miembros más antiguos del equipo original y pasa por una notable evolución profesional y emocional.</p>
         </div>
         </div>
 
         <div class="card">
-              <img src="/img/Cameron Perfil.jpeg">
+              <img src="img/Cameron Perfil.jpeg">
               <div class="card-content">
                 <h3>Jennifer Morrison</h3>
-                <p>Descripción breve…</p>
-                <label for="toggle1" class="toggle-label">Ver más</label>
+                <h4>(Dra. Allison Cameron)</h4>
+                <p class="inconsolata-uniquifier">Actriz y productora, interpretó a la idealista inmunóloga del equipo. Su personaje se destacó por su fuerte ética moral y su relación afectiva ambigua con House.</p>
         </div>
         </div>
 
         <div class="card">
-                <img src="/img/Lisa Perfil.jpg">
+                <img src="img/Lisa Perfil.jpg">
                 <div class="card-content">
                   <h3>Lisa Edelstein</h3>
-                  <p>Descripción breve…</p>
-                  <label for="toggle1" class="toggle-label">Ver más</label>
+                  <h4>(Dra. Lisa Cuddy)</h4>
+                  <p class="inconsolata-uniquifier">Como directora del hospital, es la única figura de autoridad capaz de frenar a House. Su actuación muestra fuerza y sensibilidad, y su relación con House es una de las más complejas de la serie.</p>
+ 
         </div>
         </div>
         <div class="card">
-                  <img src="/img/Taub Perfil.jpeg">
+                  <img src="img/Taub Perfil.jpeg">
                   <div class="card-content">
                     <h3>Peter Jacobson</h3>
-                    <p>Descripción breve…</p>
-                    <label for="toggle1" class="toggle-label">Ver más</label>
+                    <h4>(Dr. Chris Taub)</h4>
+                    <p class="inconsolata-uniquifier">Interpretó a un ex-cirujano plástico con conflictos personales. Su sarcasmo y sus problemas matrimoniales aportaron tensión y humor al equipo durante las últimas temporadas.</p>
         </div>
         </div>
 
         <div class="card">
-              <img src="/img/13 Perfil.jpeg">
+              <img src="img/13 Perfil.jpeg">
               <div class="card-content">
                 <h3>Olivia Wilde</h3>
-                <p>Descripción breve…</p>
-                <label for="toggle1" class="toggle-label">Ver más</label>
+                <h4>(Dra. Remy “Thirteen” Hadley)</h4>
+                <p class="inconsolata-uniquifier">Famosa también por otros papeles en cine y TV, dio vida a una médica misteriosa con una enfermedad genética. Su inteligencia y actitud reservada la convirtieron en una favorita del público.</p>
+        </div>
+        </div>
+         <div class="card">
+              <img src="img/kalpenn.jpg">
+              <div class="card-content">
+                <h3>Kal Penn</h3>
+                <h4>(Dr. Lawrence Kutner)</h4>
+                <p class="inconsolata-uniquifier">Su personaje era creativo y espontáneo, aportando frescura al equipo. Kal Penn dejó la serie abruptamente para trabajar en el gobierno de Barack Obama como asesor político.</p>
         </div>
         </div>
       </div>      
   </main>
 
   <!-- Pie de página -->
-  <footer>
-    <div class="footer-lista">
-      <div>
-        <h4>Enlaces</h4>
-      <ul class="footer-ul">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="sobre.html">Sobre la Serie</a></li>
-        <li><a href="elenco.html">Elenco y Personajes</a></li>
-        <li><a href="temporadas.html">Temporadas y Episodios</a></li>
-        <li><a href="eventos.html">Eventos y Curiosidades</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-      </div>
-      <div class="footer-links">
-        <h4>Síguenos</h4>
-        <a href="#"><img src="icons/twitter.svg" alt="Twitter"></a>
-        <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
-        <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
-      </div>
-      <div>
-        <h4>Suscríbete</h4>
-        <form><input type="email" placeholder="Tu email"><button>OK</button></form>
-      </div>
-      <div>
-        <p>&copy; 2025 Trabajo de la Facultad</p>
-      </div>
-    </div>
-  </footer>
+ <footer class="footer-simple">
+  <p>© 2025 Trabajo de la Facultad – Sitio fan de Dr. House</p>
+  <div class="footer-icons">
+    <a href="https://www.primevideo.com/dp/amzn1.dv.gti.ed27f1ca-1325-4d0a-be0d-0bf3896769cf?autoplay=0&ref_=atv_cf_strg_wb"><img src="svg/amazon.svg" alt="Amazon Prime video"></a>
+    <a href="https://play.max.com/show/1679eba6-66a9-40e6-8504-bf2aaba329e7?utm_source=universal_search"><img src="svg/hbomax.svg" alt="Hbomax"></a>
+    <a href="https://play.mercadolibre.com.ar/ver/dr-house/9f64b3a903b947f19c36bac46c434ad9?origin=google_media_actions_feed&matt_tool=20909904"><img src="svg/mercadolibre.svg" alt="Mercado Libre"></a>
+    <a href="https://www.netflix.com/watch/70136117?source=35"><img src="svg/netflix.svg" alt="Netflix"></a>
+  </div>
+</footer>
 </body>
 </html>
 

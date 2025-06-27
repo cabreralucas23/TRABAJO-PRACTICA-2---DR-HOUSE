@@ -5,66 +5,71 @@
   <!-- Metadatos / Enlace a CSS -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fan site sobre la serie Dr. House. Información sobre episodios, personajes y curiosidades.">
+  <meta name="keywords" content="Doctor House, Dr House, serie de medicos, Hugh Laurie, House">
   <title>Dr. House - Inicio</title>
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rubik+Broken+Fax&family=Rubik+Bubbles&family=Rubik+Glitch&family=Rubik+Iso&family=Rubik+Maze&family=VT323&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Titulo / Navegación -->
   <header>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <nav class="navbar responsive">
+     <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="sobre.html">Sobre la Serie</a></li>
+    <li><a href="elenco.html">Elenco y Personajes</a></li>
+    <li><a href="temporadas.html">Temporadas</a></li>
+    <li><a href="eventos.html">Eventos</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+     </ul>
+   </nav>
     <div>
-    <h1>Dr. House - Inicio </h1>
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="sobre.html">Sobre la Serie</a></li>
-        <li><a href="elenco.html">Elenco y Personajes</a></li>
-        <li><a href="temporadas.html">Temporadas y Episodios</a></li>
-        <li><a href="eventos.html">Eventos y Curiosidades</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+    <h1 class="dm-serif-text-regular">Dr. House - Inicio </h1>
   </div>
   </header>
   <!-- INICIO -->
   <main class="container">
     <div class="main-inicio">
-      <h2>¡Bienvenido a la web no oficial de Doctor House!</h2>
-      <img src="/img/grupohouse.png" alt="" class="contact-img">
-      <p>Si llegaste hasta acá, puede que te apasione la medicina, te intrigue lo complejo... o simplemente te sientas un poco enfermo. En cualquiera de los casos, estás en el lugar correcto.
+      <h2 class="bree-serif-regular">¡Bienvenido a la web no oficial de Doctor House!</h2>
+      <img src="img/grupohouse.png" alt="" class="contact-img">
+      <p class="inconsolata-uniquifier">Si llegaste hasta acá, puede que te apasione la medicina, te intrigue lo complejo... o simplemente te sientas un poco enfermo. En cualquiera de los casos, estás en el lugar correcto.
 Este sitio está dedicado a una de las series más inteligentes y provocadoras de la televisión. Explorá las temporadas, descubrí los casos más extraños que enfrentó el equipo del Dr. House y 
 reviví sus diagnósticos brillantes (y brutalmente honestos).</p>
-<p>¿Sentís que tenés algo raro y nadie te cree? ¿Te dijeron que “es estrés” pero vos sabés que no? Al estilo House, acá no damos diagnósticos simples. Completá nuestro formulario si creés que tu caso merece ser analizado por alguien que no tiene tiempo para tonterías… ni paciencia para síntomas vagos.</p>
-    </div>
+<p class="inconsolata-uniquifier">¿Sentís que tenés algo raro y nadie te cree? ¿Te dijeron que “es estrés” pero vos sabés que no? Al estilo House, acá no damos diagnósticos simples. Completá nuestro formulario si creés que tu caso merece ser analizado por alguien que no tiene tiempo para tonterías… ni paciencia para síntomas vagos.</p>
+</div>
+<section class="audio-section">
+  <h3>¡¡Antes de comenzar, escucha 1 de las 3 Intros!!</h3>
+  <audio controls>
+    <source src="mp3/Intro 1.mp3" type="audio/mpeg">
+  </audio>
+  <audio controls>
+    <source src="mp3/Intro 2.mp3" type="audio/mpeg">
+  </audio>
+  <audio controls>
+    <source src="mp3/Intro 3.mp3" type="audio/mpeg">
+  </audio>
+</section>
   </main>
 
   <!-- Pie de página -->
-  <footer>
-    <div class="footer-lista">
-      <div>
-        <h4>Enlaces</h4>
-      <ul class="footer-ul">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="sobre.html">Sobre la Serie</a></li>
-        <li><a href="elenco.html">Elenco y Personajes</a></li>
-        <li><a href="temporadas.html">Temporadas y Episodios</a></li>
-        <li><a href="eventos.html">Eventos y Curiosidades</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-      </div>
-      <div class="footer-links">
-        <h4>Síguenos</h4>
-        <a href="#"><img src="icons/twitter.svg" alt="Twitter"></a>
-        <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
-        <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
-      </div>
-      <div>
-        <h4>Suscríbete</h4>
-        <form><input type="email" placeholder="Tu email"><button>OK</button></form>
-      </div>
-      <div>
-        <p>&copy; 2025 Trabajo de la Facultad</p>
-      </div>
-    </div>
+  <footer class="footer-simple">
+  <p>© 2025 Trabajo de la Facultad – Sitio fan de Dr. House</p>
+  <div class="footer-icons">
+    <p>Ver la serie completa en</p>
+    <a href="https://www.primevideo.com/dp/amzn1.dv.gti.ed27f1ca-1325-4d0a-be0d-0bf3896769cf?autoplay=0&ref_=atv_cf_strg_wb"><img src="svg/amazon.svg" alt="Amazon Prime video"></a>
+    <a href="https://play.max.com/show/1679eba6-66a9-40e6-8504-bf2aaba329e7?utm_source=universal_search"><img src="svg/hbomax.svg" alt="Hbomax"></a>
+    <a href="https://play.mercadolibre.com.ar/ver/dr-house/9f64b3a903b947f19c36bac46c434ad9?origin=google_media_actions_feed&matt_tool=20909904"><img src="svg/mercadolibre.svg" alt="Mercado Libre"></a>
+    <a href="https://www.netflix.com/watch/70136117?source=35"><img src="svg/netflix.svg" alt="Netflix"></a>
+  </div>
+</footer>
 </body>
 </html>

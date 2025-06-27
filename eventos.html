@@ -4,49 +4,78 @@
   <!-- Metadatos y enlace al CSS -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fan site sobre la serie Dr. House. Información sobre episodios, personajes y curiosidades.">
+  <meta name="keywords" content="Doctor House, Dr House, serie de medicos, Hugh Laurie, House">
   <title>Dr. House - Eventos y Curiosidades</title>
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rubik+Broken+Fax&family=Rubik+Bubbles&family=Rubik+Glitch&family=Rubik+Iso&family=Rubik+Maze&family=VT323&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Titulo / Navegación -->
   <header>
-    <h1>Dr. House - Curiosidades</h1>
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="sobre.html">Sobre la Serie</a></li>
-        <li><a href="elenco.html">Elenco y Personajes</a></li>
-        <li><a href="temporadas.html">Temporadas y Episodios</a></li>
-        <li><a href="eventos.html">Eventos y Curiosidades</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <nav class="navbar responsive">
+     <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="sobre.html">Sobre la Serie</a></li>
+    <li><a href="elenco.html">Elenco y Personajes</a></li>
+    <li><a href="temporadas.html">Temporadas</a></li>
+    <li><a href="eventos.html">Eventos</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+     </ul>
+   </nav>
+    <h1 class="dm-serif-text-regular">Dr. House - Curiosidades</h1>
   </header>
 
   <!-- Sección de curiosidades -->
   <main class="container">
     <div class="noticion">
-      <h1>Doctor House: Eventos y Curiosidades</h1>
-  
+      <h2 class="bree-serif-regular">Doctor House: Eventos y Curiosidades</h1>
+        <br>
+        <br>
       <div class="noticia">
         <img src="img/drhousecap.jpg" alt="Miniatura de un capitulo de Dr House">
         <div class="contenido">
-          <h2>El primer caso basado en una historia real</h2>
-          <p>En el episodio piloto, el caso médico está inspirado en una rara condición real conocida como vasculitis. Los escritores se basaron en reportes médicos para diseñar diagnósticos creíbles, lo que se volvió una firma del programa.</p>
+          <h3>El primer caso basado en una historia real</h3>
+          <p class="inconsolata-uniquifier">En el episodio piloto, el caso médico está inspirado en una rara condición real conocida como vasculitis. Los escritores se basaron en reportes médicos para diseñar diagnósticos creíbles, lo que se volvió una firma del programa.</p>
         </div>
       </div>
+      <br>
       <div class="noticia">
         <img src="img/housedetras.jpg" alt="Detrás de cámaras House">
         <div class="contenido">
-          <h2>Hugh Laurie engañó a los productores</h2>
-          <p>Durante su audición, Hugh Laurie grabó su parte en un baño de hotel con acento estadounidense. Los productores pensaron que era americano y lo eligieron, sin saber que en realidad es británico. ¡Su acento era perfecto!</p>
+          <h3>Hugh Laurie engañó a los productores</h3>
+          <p class="inconsolata-uniquifier">Durante su audición, Hugh Laurie grabó su parte en un baño de hotel con acento estadounidense. Los productores pensaron que era americano y lo eligieron, sin saber que en realidad es británico. ¡Su acento era perfecto!</p>
         </div>
       </div>
+      <br>
       <div class="noticia">
         <img src="img/housesenta2.jpg" alt="House y su bastón">
         <div class="contenido">
-          <h2>El bastón: un símbolo improvisado</h2>
-          <p>Inicialmente, el bastón de House no era parte del personaje. Se introdujo para mostrar la vulnerabilidad física del doctor, pero terminó convirtiéndose en un ícono de su actitud desafiante y su dolor constante.</p>
+          <h3>El bastón: un símbolo improvisado</h3>
+          <p class="inconsolata-uniquifier">Inicialmente, el bastón de House no era parte del personaje. Se introdujo para mostrar la vulnerabilidad física del doctor, pero terminó convirtiéndose en un ícono de su actitud desafiante y su dolor constante.</p>
+        </div>
+      </div>
+      <br>
+       <div class="noticia">
+        <img src="img/golden.jpg" alt="Hou">
+        <div class="contenido">
+          <h3>Hugh Laurie ganó dos Globos de Oro por su papel</h3>
+          <p class="inconsolata-uniquifier">Hugh Laurie fue ampliamente reconocido por su interpretación como el Dr. Gregory House. Ganó dos Globos de Oro como Mejor Actor en Serie Dramática en los años 2006 y 2007, consolidando su lugar como uno de los protagonistas más icónicos de la televisión.</p>
+        </div>
+      </div>
+      <br>
+       <div class="noticia">
+        <img src="img/Drhousemasvisto.jpg" alt="House y su bastón">
+        <div class="contenido">
+          <h3>Dr. House fue una de las series más vistas del mundo</h3>
+          <p class="inconsolata-uniquifier">En el año 2008, House M.D. fue nombrada la serie de televisión más vista a nivel internacional, según la consultora Eurodata TV Worldwide. Fue traducida a decenas de idiomas y transmitida en más de 60 países, incluyendo Argentina, convirtiéndose en un fenómeno global.</p>
         </div>
       </div>
     </div>
@@ -56,34 +85,15 @@
  
   
   <!-- Pie de Pagina -->
-  <footer>
-    <div class="footer-lista">
-      <div>
-        <h4>Enlaces</h4>
-      <ul class="footer-ul">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="sobre.html">Sobre la Serie</a></li>
-        <li><a href="elenco.html">Elenco y Personajes</a></li>
-        <li><a href="temporadas.html">Temporadas y Episodios</a></li>
-        <li><a href="eventos.html">Eventos y Curiosidades</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-      </div>
-      <div class="footer-links">
-        <h4>Síguenos</h4>
-        <a href="#"><img src="icons/twitter.svg" alt="Twitter"></a>
-        <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
-        <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
-      </div>
-      <div>
-        <h4>Suscríbete</h4>
-        <form><input type="email" placeholder="Tu email"><button>OK</button></form>
-      </div>
-      <div>
-        <p>&copy; 2025 Trabajo de la Facultad</p>
-      </div>
-    </div>
-  </footer>
+<footer class="footer-simple">
+  <p>© 2025 Trabajo de la Facultad – Sitio fan de Dr. House</p>
+  <div class="footer-icons">
+    <a href="https://www.primevideo.com/dp/amzn1.dv.gti.ed27f1ca-1325-4d0a-be0d-0bf3896769cf?autoplay=0&ref_=atv_cf_strg_wb"><img src="svg/amazon.svg" alt="Amazon Prime video"></a>
+    <a href="https://play.max.com/show/1679eba6-66a9-40e6-8504-bf2aaba329e7?utm_source=universal_search"><img src="svg/hbomax.svg" alt="Hbomax"></a>
+    <a href="https://play.mercadolibre.com.ar/ver/dr-house/9f64b3a903b947f19c36bac46c434ad9?origin=google_media_actions_feed&matt_tool=20909904"><img src="svg/mercadolibre.svg" alt="Mercado Libre"></a>
+    <a href="https://www.netflix.com/watch/70136117?source=35"><img src="svg/netflix.svg" alt="Netflix"></a>
+  </div>
+</footer>
 </body>
 </html>
 
