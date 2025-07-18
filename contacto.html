@@ -38,15 +38,15 @@
   <main class="container">
   <div class="main-form">
    <form action="#" method="post">
-      <h2>Datos personales</h2>
+      <h2>🏥Datos personales🧐</h2>
       <div class="grupo-decampos">
         <div>
       <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
+      <input type="text" id="nombre" name="nombre">
         </div>
         <div>
       <label for="apellido">Apellido:</label>
-      <input type="text" id="apellido" name="apellido" required>
+      <input type="text" id="apellido" name="apellido">
         </div>
         <div>
       <label for="edad">Edad:</label>
@@ -61,9 +61,9 @@
       <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required>
         </div>
       </div>
-      <h2>Motivo de consulta</h2>
+      <h2>Motivo de consulta🤧</h2>
       <label for="sintomas">¿Qué síntomas tienes?</label>
-      <select id="sintomas" name="sintomas[]" multiple size="4" required>
+      <select id="sintomas" name="sintomas[]" multiple size="4" requiered>
         <option value="fiebre">Fiebre</option>
         <option value="tos">Tos persistente</option>
         <option value="dolor">Dolor de cabeza</option>
@@ -76,7 +76,7 @@
       <input type="date" id="duracion" name="duracion" required>
       <br>
       <label for="intensidad">¿Qué tan intensos son los síntomas?</label>
-      <input type="range" id="intensidad" name="intensidad" min="1" max="10">
+      <input type="range" id="intensidad" name="intensidad" min="1" max="10" requiered>
       <small>1 (leve) - 10 (grave)</small>
       <br>
       <label for="antecedentes">Antecedentes médicos importantes:</label>
@@ -84,7 +84,26 @@
       <br>
       <h2>Comentarios finales</h2>
       <label for="mensaje">Puede ser mas especifico si quiere:</label>
-      <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+      <textarea id="mensaje" name="mensaje" rows="4" requiered></textarea>
+      <h2>¿Cómo nos conociste?</h2>
+      <label for="origen">Selecciona una opción:</label>
+      <select id="origen" name="origen">
+        <option value="">Selecciona una opción</option>
+        <option value="Google">Google</option>
+        <option value="Facebook">Facebook</option>
+        <option value="Twitter">Twitter</option>
+        <option value="Instagram">Instagram</option>
+        <option value="Por que dr house es la onda">Por que amo Dr House</option>
+      </select>
+      <h2>Valoración de la serie🤩</h2>
+      <label>¿Cuánto te gusta Dr. House?</label>
+      <div class="valoracion">
+        <label><input type="radio" name="valoracion" value="5">⭐⭐⭐⭐⭐</label>
+        <label><input type="radio" name="valoracion" value="4">⭐⭐⭐⭐</label>
+        <label><input type="radio" name="valoracion" value="3">⭐⭐⭐</label>
+        <label><input type="radio" name="valoracion" value="2">⭐⭐</label>
+        <label><input type="radio" name="valoracion" value="1">⭐</label>
+      </div>
       <div>
         <button  type="submit"><a href="enviado.html">Enviar consulta</a></button>
       </div>
